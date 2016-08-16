@@ -2,6 +2,7 @@
 include("includes/header.php"); 
 ?>
           <h1>This is the body</h1>
+          <h2>This is the second change!</h2>
           <a class="btn btn-default navbar-btn" href="index.php" role="button">Birmingham Workshop</a>
           <button type="button" class="btn btn-default navbar-btn active" href="#" role="button">London Workshop</button>
 <?php
