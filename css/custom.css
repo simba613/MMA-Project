@@ -1,0 +1,443 @@
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #454646;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    line-height: 1.3;
+}
+
+p, ul, ol {
+	margin-bottom: 20px;
+}
+
+.alert>p, .alert>ul {
+/* Alerts reset the paragraph padding for some reason */
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #DAEBE3;
+    border-color: #B0D3C3;
+}
+
+ul {
+/* <ul> browser padding reset */
+	padding-left: 30px;
+}
+
+
+h4 {
+	margin-top: 30px;
+	color: #000;
+	font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-btns {
+	text-align: center;
+	display: block;
+}
+
+/* Only right-aligned for desktop */
+.navbar-right {
+	text-align: center;
+}
+
+.navbar .btn {
+	color: #bdfde0;
+    background-color: #222;
+    border-color: #222;
+}
+
+/* 14px works well on small screens, buttons stay beside each other and phone number takes 1 line */
+.navbar .btn, .navbar p {
+	font-size: 14px;
+}
+
+@media screen and (min-width: 768px){
+	.navbar .btn, .navbar p {
+		font-size: inherit;
+	}
+}
+
+.navbar .btn:hover {
+	color: #bdfde0;
+    background-color: #444;
+    border-color: #222;
+}
+
+.navbar .btn.active, .navbar .btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+}
+
+.navbar .btn-default.active, .navbar .btn-default:active, .navbar .open>.dropdown-toggle.btn-default {
+    background-color: #529677;
+    cursor: auto;
+}
+
+@media screen and (min-width: 768px){
+	.navbar-btns {
+		text-align: left;
+		display: block;
+	}
+}
+
+/* JUMBOTRON */
+.jumbotron {
+	background-color: #529677;
+	margin-bottom: 0px;
+}
+
+.jumbotron .container {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.jumbotron .h1, .jumbotron h1, .jumbotron p {
+	color: #000;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.jumbotron .preheadline {
+	font-size: 16px;
+	font-weight: 400;
+	color: #bdfde0;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px){
+
+	.jumbotron {
+    	padding-top: 0px;
+    	padding-bottom: 0px;
+	}
+	.jumbotron .h1, .jumbotron h1 {
+    font-size: 36px;
+	}
+}
+
+.hero-image {
+	max-width: 600px;
+	width: 100%;
+}
+
+.below-jumbotron {
+	background: #B0D3C3;
+	font-size: 20px;
+}
+
+.below-jumbotron .container {
+	max-width: 800px;
+	color: #155E3D;
+	font-size: 20px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.block {
+  position: relative;
+  width: 100%;
+  padding: 60px 30px;
+  color: inherit;
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block-inverse {
+  color: rgba(255, 255, 255, .7);
+  background-color: #262F36;
+}
+
+.block-inverse .text-muted {
+    color: rgba(255, 255, 255, .7);
+}
+
+.workshop-summary h3 {
+	margin-top: 0px;
+}
+
+.workshop-summary h5 {
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+
+ul.spaced-li li {
+	padding-bottom: 12px;
+}
+
+.pretty-list li {
+    display: block;
+}
+
+.pretty-list li:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 11px;
+    float: left;
+    margin-top: 5px;
+    margin-left: -20px;
+    color: #529677;
+}
+
+/* ORDER BOX */
+
+.order-box {
+	background-color: #F4F5F6;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 45px;
+    border-radius: 6px;
+}
+
+.order-box li:before {
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 11px;
+    float: left;
+    margin-top: 3px;
+    margin-left: -20px;
+    color: #529677;
+}
+
+.center {
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+/* Give Workshop Summary and Order box room to breathe, but not on mobile */
+	.summary {
+    	padding-right: 50px;
+	}
+}
+
+/* footer block */
+.app-footer a {
+  color: #fff;
+}
+
+.block-inverse h1,
+.block-inverse h2,
+.block-inverse h3,
+.block-inverse h4,
+.block-inverse h5,
+.block-inverse h6,
+.block-inverse .h1,
+.block-inverse .h2,
+.block-inverse .h3,
+.block-inverse .h4,
+.block-inverse .h5,
+.block-inverse .h6 {
+  color: #FFF;
+}
+
+/* PADDING AND MARGINS */
+
+.m-a-0 {
+  margin: 0 !important;
+}
+.m-t-0 {
+  margin-top: 0 !important;
+}
+.m-r-0 {
+  margin-right: 0 !important;
+}
+.m-b-0 {
+  margin-bottom: 0 !important;
+}
+.m-l-0 {
+  margin-left: 0 !important;
+}
+.m-x-0 {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.m-y-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.m-a {
+  margin: 20px !important;
+}
+.m-t {
+  margin-top: 20px !important;
+}
+.m-r {
+  margin-right: 20px !important;
+}
+.m-b {
+  margin-bottom: 20px !important;
+}
+.m-l {
+  margin-left: 20px !important;
+}
+.m-x {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+.m-y {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.m-a-md {
+  margin: 30px !important;
+}
+.m-t-md {
+  margin-top: 30px !important;
+}
+.m-r-md {
+  margin-right: 30px !important;
+}
+.m-b-md {
+  margin-bottom: 30px !important;
+}
+.m-l-md {
+  margin-left: 30px !important;
+}
+.m-x-md {
+  margin-right: 30px !important;
+  margin-left: 30px !important;
+}
+.m-y-md {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+.m-a-lg {
+  margin: 60px !important;
+}
+.m-t-lg {
+  margin-top: 60px !important;
+}
+.m-r-lg {
+  margin-right: 60px !important;
+}
+.m-b-lg {
+  margin-bottom: 60px !important;
+}
+.m-l-lg {
+  margin-left: 60px !important;
+}
+.m-x-lg {
+  margin-right: 60px !important;
+  margin-left: 60px !important;
+}
+.m-y-lg {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+.p-a-0 {
+  padding: 0 !important;
+}
+.p-t-0 {
+  padding-top: 0 !important;
+}
+.p-r-0 {
+  padding-right: 0 !important;
+}
+.p-b-0 {
+  padding-bottom: 0 !important;
+}
+.p-l-0 {
+  padding-left: 0 !important;
+}
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.p-y-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.p-a {
+  padding: 20px !important;
+}
+.p-t {
+  padding-top: 20px !important;
+}
+.p-r {
+  padding-right: 20px !important;
+}
+.p-b {
+  padding-bottom: 20px !important;
+}
+.p-l {
+  padding-left: 20px !important;
+}
+.p-x {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+.p-y {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.p-a-md {
+  padding: 30px !important;
+}
+.p-t-md {
+  padding-top: 30px !important;
+}
+.p-r-md {
+  padding-right: 30px !important;
+}
+.p-b-md {
+  padding-bottom: 30px !important;
+}
+.p-l-md {
+  padding-left: 30px !important;
+}
+.p-x-md {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+.p-y-md {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.p-a-lg {
+  padding: 60px !important;
+}
+.p-t-lg {
+  padding-top: 60px !important;
+}
+.p-r-lg {
+  padding-right: 60px !important;
+}
+.p-b-lg {
+  padding-bottom: 60px !important;
+}
+.p-l-lg {
+  padding-left: 60px !important;
+}
+.p-x-lg {
+  padding-right: 60px !important;
+  padding-left: 60px !important;
+}
+.p-y-lg {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
